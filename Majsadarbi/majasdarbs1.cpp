@@ -4,7 +4,7 @@ using namespace std;
 
 void isOdd(string userInput) {
    string isOdd; 
-    if(userInput.size() % 2 == 1) {
+    if (userInput.size() % 2 == 1) {
         isOdd = "nepara";
     } else {
         isOdd = "para";
@@ -31,7 +31,7 @@ void arithmeticProgression(string userInputValTxt) {
 void computeFactorial(string userInputValueTxt) { 
     int factorial; 
     factorial = 1;
-    for(int i = 1; i <= userInputValueTxt.size() ;i++) {
+    for (int i = 1; i <= userInputValueTxt.size() ;i++) {
         factorial = i * factorial; 
     }
     cout << "'" << userInputValueTxt << "' teksta garums faktorialis ir " << factorial  << endl;
@@ -39,7 +39,7 @@ void computeFactorial(string userInputValueTxt) {
 
 void reverseInput(string userInputValueTxt) {
     string stringReverse = ""; 
-    for(char i : userInputValueTxt) {
+    for (char i : userInputValueTxt) {
             stringReverse = i + stringReverse;
         }
     cout << "apgreizta vertiba tekstam" << " '" << userInputValueTxt << "' ir  '" << stringReverse << "'" << endl; 
@@ -50,7 +50,7 @@ string userInputValueTxt = "Teksts ir loti loti interesants";
 int commandNumber; 
 cout << "Ludzu ievadiet vertibu no 1(ieskaitot) lidz 6(ieskaitot)" << endl; 
 cin >> commandNumber; 
-while(1){
+while (1){
     switch (commandNumber) {
     case 1:
         insertNewTxt(userInputValueTxt);
