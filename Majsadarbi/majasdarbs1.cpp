@@ -24,7 +24,7 @@ void insertNewTxt(string& usinptVal) {
     cin >> usinptVal; 
 }
 void arithmeticProgression(string userInputValTxt) {
-    int arithmeticProgressionofN = (1+userInputValTxt.size())*userInputValTxt.size()/2;
+    int arithmeticProgressionofN = (1 + userInputValTxt.size()) * userInputValTxt.size() / 2;
     cout << "Teksta garuma aritmetiskas progresijas summa ir " << arithmeticProgressionofN << endl;
 }
 void computeFactorial(string userInputValueTxt) { 
