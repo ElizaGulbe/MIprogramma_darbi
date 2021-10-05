@@ -19,6 +19,13 @@ string reverseString(string userInput){
     return retVal;
 }
 
+string reversewithIterator(string userInput){
+    string retVal; 
+    for(char i:userInput) {
+        retVal = i + retVal;
+    }
+    return retVal;
+}
 int computeSum(int a){
   if (a > 1)
    return (a + computeSum(a-1));
@@ -58,6 +65,8 @@ int main(){
     string userInput; 
     getline(cin,userInput);
     cout << "Simbolu virknes" << userInput << "apgriezta vertiba ir " << reverseString(userInput) << endl; 
+    // 1.1 uzdevums
+    cout << "Simbolu virknes" << userInput << "apgriezta vertiba (ar iterator) ir " << reversewithIterator(userInput) << endl;
     // 2. uzdevums
     cout << "Ievadiet skaitli:" << endl;
     int userInputNumber;
