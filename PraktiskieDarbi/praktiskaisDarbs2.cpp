@@ -4,9 +4,8 @@
 using namespace std;
 
 template <class SomeType>
-SomeType minVal (SomeType a, SomeType b)
-{
-  if(a > b){
+SomeType minVal(SomeType a, SomeType b){
+  if(a > b) {
       return b;
   }
     return a;
@@ -14,19 +13,17 @@ SomeType minVal (SomeType a, SomeType b)
 
 string reverseString(string userInput){
     string retVal; 
-    for(int counter = userInput.size()-1; counter >= 0 ; counter-- ){
+    for(int counter = userInput.size()-1; counter >= 0 ; counter-- ) {
         retVal.push_back(userInput[counter]);
     }
     return retVal;
 }
 
 int computeSum(int a){
-  
   if (a > 1)
-   return (a + computeSum(a-1) );
+   return (a + computeSum(a-1));
   else
    return 1;
-
 }
 
 int addOperation(int a, int b){
@@ -56,18 +53,22 @@ void print(double value){
 }
 
 int main(){
+    // 1. uzdevums
     cout << "Ievadiet simbolu virkni:" << endl;
     string userInput; 
     getline(cin,userInput);
     cout << "Simbolu virknes" << userInput << "apgriezta vertiba ir " << reverseString(userInput) << endl; 
+    // 2. uzdevums
     cout << "Ievadiet skaitli:" << endl;
     int userInputNumber;
     cin >> userInputNumber;
     cout << "Aritmetiskas progresijas summa skaitlim " << userInputNumber << " ir " << computeSum(userInputNumber) << endl;
+    // 3. uzdevums
     print(5);
     print("hello");
     print('g');
     print(1.1);
+    // 4.uzdevums
     int i=5, j=6, k;
     double f=2.0, g=0.5, h;
     string str1 = "manisauceliza", str2 = "anisauceliza", str3;
@@ -80,6 +81,7 @@ int main(){
     cout << h << endl;
     cout << str3 << endl;
     cout << ch3 << endl;
+    //5.uzdevums
     cout << "Ievadiet 1. skaitli:" << endl;
     int number1;
     cin >> number1;
@@ -100,5 +102,5 @@ int main(){
         } else { 
             cout << "Incorrect operator" << endl;
         }
-return 0;
+    return 0;
 }
