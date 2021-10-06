@@ -60,6 +60,8 @@ void print(double value){
 }
 
 int main(){
+    // 1.2. Izveidot papildus realizāciju, ka lietotājs ievad vēl vienu virkni - to saglabā char masīvā un izveidot funkciju, 
+    // kura veic šo pašu uzdevumu (reverse) tikai ar char masīvu
     // 1. uzdevums
     cout << "Ievadiet simbolu virkni:" << endl;
     string userInput; 
@@ -72,12 +74,29 @@ int main(){
     int userInputNumber;
     cin >> userInputNumber;
     cout << "Aritmetiskas progresijas summa skaitlim " << userInputNumber << " ir " << computeSum(userInputNumber) << endl;
-    // 3. uzdevums
-    print(5);
-    print("hello");
-    print('g');
-    print(1.1);
+    // 3. uzdevums 3.1 izpildits 
+    cout << "ludzu ievadiet veselu skaitli" << endl;
+    int skaitlis;
+    cin >> skaitlis;
+    cout << "Ievaditais skaitlis ir ";
+    print(skaitlis);
+    cout << "ludzu ievadiet simbolu virkni" << endl;
+    string simboluVirkne;
+    cin >> simboluVirkne;
+    cout << "Ievadita simbolu virkne ir  ";
+    print(simboluVirkne);
+    cout << "ludzu ievadiet 1 simbolu" << endl;
+    char ievaditaisSimbols;
+    cin >> ievaditaisSimbols;
+    cout << "Ievaditais simbols ir  ";
+    print(ievaditaisSimbols);
+    cout << "ludzu ievadiet decimalskaitli(double)" << endl;
+    double decimalskaitlis;
+    cin >> decimalskaitlis;
+    cout << "Ievaditais skaitlis ir  ";
+    print(decimalskaitlis);
     // 4.uzdevums
+    
     int i=5, j=6, k;
     double f=2.0, g=0.5, h;
     string str1 = "manisauceliza", str2 = "anisauceliza", str3;
