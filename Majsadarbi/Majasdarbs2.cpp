@@ -76,7 +76,6 @@ void displayList(vector<int> &initialValue) {
     cout << retVal << endl;
 }
 void insertNewElements(vector<int> &initialValue) {
-    cout << "ievadiet 1 skaitli" << endl;
     int number; // ievada pa vienam skaitlim lidz lietotajs vairs nevelas ievietot skaitli
     char response = 'y';
     while (response == 'y') {
