@@ -9,7 +9,6 @@ using namespace std;
 
 void createAndDisplayQueue(const vector<int> &initialValue){
     queue<int> myqueue;
-
     for(int i = 0 ; i < initialValue.size() ; i++) {
         myqueue.push(initialValue[i]); // pievieno vectoru stack
     }
